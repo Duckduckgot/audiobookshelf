@@ -23,7 +23,7 @@ module.exports = {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Kepsee book',
+    title: 'Kepsee-media',
     htmlAttrs: {
       lang: 'ru'
     },
@@ -81,14 +81,14 @@ module.exports = {
     icon: false,
     meta: {
       appleStatusBarStyle: 'black',
-      name: 'Audiobookshelf',
+      name: 'Kepsee-media',
       theme_color: '#232323',
       mobileAppIOS: true,
       nativeUI: true
     },
     manifest: {
-      name: 'Audiobookshelf',
-      short_name: 'Audiobookshelf',
+      name: 'Kepsee-media',
+      short_name: 'Kepsee',
       display: 'standalone',
       background_color: '#232323',
       icons: [
