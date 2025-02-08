@@ -1,8 +1,8 @@
 {
-  "name": "audiobookshelf",
+  "name": "kepsee",
   "version": "2.19.0",
   "buildNumber": 1,
-  "description": "Self-hosted audiobook and podcast server",
+  "description": "Кэпсээ медиа, аудиокниги, подкасты",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --watch server index.js -- --dev",
