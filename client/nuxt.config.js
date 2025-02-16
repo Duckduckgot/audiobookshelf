@@ -1,6 +1,6 @@
 const pkg = require('./package.json')
 
-const routerBasePath = process.env.ROUTER_BASE_PATH ?? '/audiobookshelf'
+const routerBasePath = process.env.ROUTER_BASE_PATH ?? '/media'
 const serverHostUrl = process.env.NODE_ENV === 'production' ? '' : 'http://localhost:3333'
 const serverPaths = ['api/', 'public/', 'hls/', 'auth/', 'feed/', 'status', 'login', 'logout', 'init']
 const proxy = Object.fromEntries(serverPaths.map((path) => [`${routerBasePath}/${path}`, { target: process.env.NODE_ENV !== 'production' ? serverHostUrl : '/' }]))
@@ -23,9 +23,9 @@ module.exports = {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Audiobookshelf',
+    title: 'Kepseebook',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ru'
     },
     meta: [{ charset: 'utf-8' }, { name: 'viewport', content: 'width=device-width, initial-scale=1' }, { hid: 'description', name: 'description', content: '' }, { hid: 'robots', name: 'robots', content: 'noindex' }],
     script: [],
@@ -81,14 +81,14 @@ module.exports = {
     icon: false,
     meta: {
       appleStatusBarStyle: 'black',
-      name: 'Audiobookshelf',
+      name: 'Kepseebook',
       theme_color: '#232323',
       mobileAppIOS: true,
       nativeUI: true
     },
     manifest: {
-      name: 'Audiobookshelf',
-      short_name: 'Audiobookshelf',
+      name: 'Kepseebook',
+      short_name: 'Kepsbook',
       display: 'standalone',
       background_color: '#232323',
       icons: [
